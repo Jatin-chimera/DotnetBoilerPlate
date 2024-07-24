@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mango.Services.CouponAPI\Mango.Services.CouponAPI.csproj" />
+    <ProjectReference Include="..\Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

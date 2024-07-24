@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{31FBE609-9D40-4DAA-8BC7-0AC617D02D0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{E54F1856-7F88-4543-A63D-EF034CAC89E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{E54F1856-7F88-4543-A63D-EF034CAC89E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.ProductAPI", "Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj", "{F3C4FDA7-A71E-4927-BD72-034973DE1FF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{E54F1856-7F88-4543-A63D-EF034CAC89E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E54F1856-7F88-4543-A63D-EF034CAC89E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E54F1856-7F88-4543-A63D-EF034CAC89E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C4FDA7-A71E-4927-BD72-034973DE1FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C4FDA7-A71E-4927-BD72-034973DE1FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C4FDA7-A71E-4927-BD72-034973DE1FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C4FDA7-A71E-4927-BD72-034973DE1FF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{BFAAAF5E-83E8-48BE-84F1-3EAF26022989} = {76616DFC-4CDA-49E8-BD0A-8443AB98FCA3}
 		{31FBE609-9D40-4DAA-8BC7-0AC617D02D0B} = {7EFE27D7-DA60-4993-AB1F-9117149F6BC5}
 		{E54F1856-7F88-4543-A63D-EF034CAC89E8} = {76616DFC-4CDA-49E8-BD0A-8443AB98FCA3}
+		{F3C4FDA7-A71E-4927-BD72-034973DE1FF9} = {76616DFC-4CDA-49E8-BD0A-8443AB98FCA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AFA4C47B-E7E0-4078-BE2A-F76F79A9D07D}
