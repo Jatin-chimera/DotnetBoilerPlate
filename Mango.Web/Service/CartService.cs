@@ -1,0 +1,64 @@
+﻿using Mango.Web.Models;
+using Mango.Web.Service.IService;
+using Mango.Web.Utility;
+
+namespace Mango.Web.Service
+{
+    public class CartService : ICartService
+    {
+        public readonly IBaseService _baseService;
+        public CartService(IBaseService baseService)
+        {
+            _baseService = baseService;
+        }
+
+        public async Task<ResponseDto?> ApplyCouponAsync(CartDto cartDto)
+        {
+            return await _baseService.SendAsync(new RequestDto
+            {
+                ApiType = Utility.SD.ApiType.POST,
+                Data = cartDto,
+                Url = SD.ShoppingCartAPIBase + "/api/cart/ApplyCoupon"
+            });
+        }
+
+        //public async Task<ResponseDto?> EmailCart(CartDto cartDto)
+        //{
+        //    return await _baseService.SendAsync(new RequestDto
+        //    {
+        //        ApiType = Utility.SD.ApiType.DELETE,
+        //        Url = SD.CouponAPIbase + "/api/cart/" + id
+        //    });
+        //}
+
+        public async Task<ResponseDto?> GetCartByUserIdAsnyc(string userId)
+        {
+            return await _baseService.SendAsync(new RequestDto
+            {
+                ApiType = Utility.SD.ApiType.GET,
+                Url = SD.ShoppingCartAPIBase + "/api/cart/GetCart/" + userId
+            });
+        }
+
+        public async Task<ResponseDto?> RemoveFromCartAsync(int cartDetailsId)
+        {
+            return await _baseService.SendAsync(new RequestDto
+            {
+                ApiType = Utility.SD.ApiType.POST,
+                Url = SD.ShoppingCartAPIBase + "/api/cart/RemoveCart/" + cartDetailsId
+            });
+        }
+
+        public async Task<ResponseDto?> UpsertCartAsync(CartDto cartDto)
+        {
+            return await _baseService.SendAsync(new RequestDto
+            {
+                ApiType = Utility.SD.ApiType.POST,
+                Data = cartDto,
+                Url = SD.ShoppingCartAPIBase + "/api/cart/CartUpsert"
+            });
+        }
+
+       
+    }
+}

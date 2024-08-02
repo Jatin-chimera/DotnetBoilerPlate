@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="7.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Mango.Services.CouponAPI\Mango.Services.CouponAPI.csproj" />
     <ProjectReference Include="..\Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj" />
+    <ProjectReference Include="..\Mango.Services.ShoppingCartAPI\Mango.Services.ShoppingCartAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

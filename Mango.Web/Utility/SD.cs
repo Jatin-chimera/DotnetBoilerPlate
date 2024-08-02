@@ -4,6 +4,7 @@
     {
         public static string CouponAPIbase { get; set; }
         public static string ProductAPIbase { get; set; }
+        public static string ShoppingCartAPIBase { get; set; }
         public static string AuthAPIbase { get; set; }
 
         public const string RoleAdmin = "ADMIN";
